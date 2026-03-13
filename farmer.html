@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+  <!-- Header -->
+    
+<header class="navbar">
+     <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fas fa-box"></i>
+                </div>
+                <h1 class="header-title">Farmer Dashboard</h1>
+            </div>
+            <div class="user-info">
+                Welcome, <span class="username">Farmer</span>
+            </div>
+        </div>
+    <button onclick="logout()">Logout</button>
+</header>
+<div class="container">
+    
+
+    
+    <h2>Add Crop Details</h2>
+    <form>
+        <input type="text" placeholder="Crop Name" required>
+        <input type="number" placeholder="Quantity (tons)" required>
+        <button type="submit">Add Crop</button>
+    </form>
+
+    <h2>My Crops List</h2>
+    <table>
+        <tr>
+            <th>Crop</th>
+            <th>Quantity</th>
+
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>50</td>
+            
+        </tr>
+    </table>
+</div>
+
+<script src="farmer.js"></script>
+
+
+
+<select id="language" onchange="changeLanguage()">
+    <option value="en">English</option>
+    <option value="hi">Hindi</option>
+    <option value="mr">Marathi</option>
+</select>
+
+<h1 id="title">AgriExport Management System</h1>
+<p id="desc">Connecting farmers to global markets</p>
+</body>
+</html>
